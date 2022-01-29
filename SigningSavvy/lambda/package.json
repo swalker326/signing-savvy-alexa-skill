@@ -1,5 +1,5 @@
 {
-  "name": "sign_skill",
+  "name": "signingsavvy",
   "version": "1.0.0",
   "description": "alexa skill to display an asl sign",
   "main": "index.js",
