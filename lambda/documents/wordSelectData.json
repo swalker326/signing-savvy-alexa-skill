@@ -1,0 +1,43 @@
+{
+  "textListData": {
+    "type": "object",
+    "objectId": "textListSample",
+    "backgroundImage": {
+      "contentDescription": null,
+      "smallSourceUrl": null,
+      "largeSourceUrl": null,
+      "sources": [
+        {
+          "url": "https://d2o906d8ln7ui1.cloudfront.net/images/templates_v3/textlist/AlexaTextListBackground_Dark.png",
+          "size": "large"
+        }
+      ]
+    },
+    "title": "Water",
+    "listItems": [
+      {
+        "primaryText": "As in 'the liquid'",
+        "primaryAction": [
+          {
+            "type": "SetValue",
+            "componentId": "plantList",
+            "property": "headerTitle",
+            "value": "${payload.textListData.listItems[0].primaryText} is selected"
+          }
+        ]
+      },
+      {
+        "primaryText": "As in 'a body of water'",
+        "primaryAction": [
+          {
+            "type": "SetValue",
+            "componentId": "plantList",
+            "property": "headerTitle",
+            "value": "${payload.textListData.listItems[1].primaryText} is selected"
+          }
+        ]
+      }
+    ],
+    "logoUrl": "https://d2o906d8ln7ui1.cloudfront.net/images/templates_v3/logo/logo-modern-botanical-white.png"
+  }
+}

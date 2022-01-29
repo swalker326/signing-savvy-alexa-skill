@@ -1,0 +1,30 @@
+{
+  "type": "APL",
+  "version": "1.8",
+  "license": "Copyright 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.\nSPDX-License-Identifier: LicenseRef-.amazon.com.-AmznSL-1.0\nLicensed under the Amazon Software License  http://aws.amazon.com/asl/",
+  "theme": "dark",
+  "import": [
+    {
+      "name": "alexa-layouts",
+      "version": "1.4.0"
+    }
+  ],
+  "mainTemplate": {
+    "parameters": [
+      "payload"
+    ],
+    "items": [
+      {
+        "type": "AlexaTextList",
+        "headerTitle": "${payload.launchData.properties.requestedWord}",
+        "headerBackButton": true,
+        "listItems": "${payload.launchData.properties.searchResults}",
+        "touchForward": true,
+        "id": "wordList",
+        "arguments": [
+          "Testing a thing"
+        ]
+      }
+    ]
+  }
+}

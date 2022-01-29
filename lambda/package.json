@@ -1,0 +1,27 @@
+{
+  "name": "sign_skill",
+  "version": "1.0.0",
+  "description": "alexa skill to display an asl sign",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npx rimraf ./dist ./tsconfig.tsbuildinfo",
+    "postinstall": "npm run clean && npm run build",
+    "build": "npx tsc"
+  },
+  "author": "shane walker",
+  "dependencies": {
+    "ask-sdk-core": "^2.7.0",
+    "ask-sdk-model": "^1.19.0",
+    "aws-sdk": "^2.326.0",
+    "axios": "^0.22.0",
+    "cheerio": "*",
+    "cross-fetch": "^3.1.4",
+    "typescript": "^4.4.3",
+    "unsplash-js": "^7.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.2",
+    "nodemon": "^2.0.13",
+    "ts-node": "^10.2.1"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "Signing Savvy",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.SelectIntent",
+          "samples": []
+        },
+        {
+          "name": "ShowMeSignIntent",
+          "slots": [
+            {
+              "name": "sign",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "how do you sign {sign}",
+            "how do I sign {sign}",
+            "what is the sign for {sign}",
+            "show me the sign for {sign}"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "12"
+}
